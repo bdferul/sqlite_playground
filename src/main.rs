@@ -1,10 +1,7 @@
 use std::io::{self, Lines, StdinLock, Write};
 
 use sqlite::Result;
-use tabled::{
-    builder::{self, Builder},
-    settings::Style,
-};
+use tabled::{builder::Builder, settings::Style};
 
 struct Prompt<'a>(Lines<StdinLock<'a>>);
 
